@@ -1,0 +1,68 @@
+Путь файла
+Что изображено
+Размер
+Где взять сейчас
+assets/images/zones/standard-hall.jpg
+Standard зал (общий вид с компьютерами)
+800×600px
+Скриншот из ВК альбома
+assets/images/zones/vip-hall.jpg
+VIP зал (премиум кресла, мониторы)
+800×600px
+Скриншот из ВК альбома
+assets/images/zones/bootcamp-hall.jpg
+Bootcamp зал (топовое железо)
+800×600px
+Можно пока standard-hall.jpg
+assets/images/zones/duo-hall.jpg
+DUO зал (2 рабочих места, зеленая стена)
+800×600px
+Скриншот из ВК альбома
+assets/images/zones/trio-hall.jpg
+TRIO зал (3 рабочих места)
+800×600px
+Скриншот из ВК альбома
+assets/images/zones/solo-hall.jpg
+SOLO зал (1 место)
+800×600px
+Можно пока duo-hall.jpg
+assets/images/zones/ps5-zone.jpg
+PS5 зона (неоновая вывеска + джойстик)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/logo-neon.jpg
+Неоновый логотип "M" (фиолетовый)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/ps5-zone.jpg
+PS5 зона (крупный план)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/duo-hall.jpg
+DUO зал (другой ракурс)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/trio-hall.jpg
+TRIO зал (другой ракурс)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/vip-hall.jpg
+VIP зал (другой ракурс)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/standard-hall.jpg
+Standard зал (другой ракурс)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/tv-hall.jpg
+TV зал (диван, телевизор, приставка)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/hookah.jpg
+Кальянная зона (кальян, столик)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/atmosphere.jpg
+Атмосфера (неон, Joker на стене, бар)
+800×600px
+Скриншот из ВК альбома
