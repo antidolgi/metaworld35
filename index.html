@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaWorld — Киберспортивный клуб в Вологде | Игровые компьютеры, PS5, VIP залы</title>
+    <meta name="description" content="MetaWorld — топовый компьютерный клуб в Вологде (ТЦ Оазис, 6 этаж). PC Standard/VIP/Bootcamp, PS5, залы DUO/TRIO/SOLO. Круглосуточно. Бонусы новичкам 500₽!">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Vanilla Tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-theme="night">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <span class="logo__text">Meta</span><span class="logo__text logo__text--accent">World</span>
+                </div>
+                
+                <nav class="nav">
+                    <a href="#zones" class="nav__link">Зоны</a>
+                    <a href="#prices" class="nav__link">Цены</a>
+                    <a href="#atmosphere" class="nav__link">Атмосфера</a>
+                    <a href="#contacts" class="nav__link">Контакты</a>
+                </nav>
+
+                <div class="header__actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">
+                        <span class="theme-toggle__icon">🌙</span>
+                    </button>
+                    <button class="btn btn--primary open-modal" data-modal="booking">
+                        Забронировать
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__bg">
+            <div class="hero__video-placeholder">
+                <div class="hero__gradient"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="hero__title-line">Играй на</span>
+                    <span class="hero__title-line hero__title-line--accent">максимуме</span>
+                </h1>
+                <p class="hero__subtitle">Киберспортивный клуб нового поколения в Вологде. Топовое железо, неоновая атмосфера, круглосуточный драйв.</p>
+                <div class="hero__buttons">
+                    <button class="btn btn--primary btn--large open-modal" data-modal="booking">
+                        Забронировать место
+                    </button>
+                    <a href="#prices" class="btn btn--outline btn--large">Смотреть цены</a>
+                </div>
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__value">24/7</span>
+                        <span class="stat__label">Круглосуточно</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__value">RTX 4070</span>
+                        <span class="stat__label">Топовое железо</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__value">500₽</span>
+                        <span class="stat__label">Бонус новичкам</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__scroll">
+            <span>Листай вниз</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Zones Section -->
+    <section id="zones" class="zones section">
+        <div class="container">
+            <h2 class="section__title">Выбери свою <span class="text-accent">зону</span></h2>
+            <p class="section__subtitle">От стандартных залов до VIP-комнат — найди идеальный формат для своей игры</p>
+
+            <div class="zones__grid" id="zonesContainer">
+                <!-- Zones will be rendered from data.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Prices Section -->
+    <section id="prices" class="prices section">
+        <div class="container">
+            <h2 class="section__title">Прозрачные <span class="text-accent">цены</span></h2>
+            <p class="section__subtitle">Честная стоимость без скрытых платежей. Выбирай время — экономь деньги.</p>
+
+            <div class="prices__tabs">
+                <button class="prices__tab active" data-time="morning">Утро<br><small>8:00-14:00</small></button>
+                <button class="prices__tab" data-time="day">День<br><small>14:00-18:00</small></button>
+                <button class="prices__tab" data-time="evening">Вечер<br><small>18:00-00:00</small></button>
+                <button class="prices__tab" data-time="night">Ночь<br><small>00:00-8:00</small></button>
+            </div>
+
+            <div class="prices__grid" id="pricesContainer">
+                <!-- Prices will be rendered from data.json -->
+            </div>
+
+            <div class="promo-banner">
+                <div class="promo-banner__icon">🎁</div>
+                <div class="promo-banner__text">
+                    <strong>ВСЕМ НОВИЧКАМ 500 БОНУСОВ</strong>
+                    <span>при первом пополнении от 200 рублей</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atmosphere Section -->
+    <section id="atmosphere" class="atmosphere section">
+        <div class="container">
+            <h2 class="section__title">Атмосфера <span class="text-accent">MetaWorld</span></h2>
+            <p class="section__subtitle">Погрузись в мир киберспорта с головой</p>
+
+            <div class="gallery__grid" id="galleryContainer">
+                <!-- Gallery images will be rendered from data.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="contacts section">
+        <div class="container">
+            <div class="contacts__grid">
+                <div class="contacts__info">
+                    <h2 class="section__title">Где нас <span class="text-accent">найти</span></h2>
+                    
+                    <div class="contact-card">
+                        <div class="contact-card__icon">📍</div>
+                        <div class="contact-card__content">
+                            <h3>Адрес</h3>
+                            <p>г. Вологда, ул. Мира 82<br>ТЦ Оазис, 6 этаж</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card__icon">🕐</div>
+                        <div class="contact-card__content">
+                            <h3>Режим работы</h3>
+                            <p>Круглосуточно<br>без выходных</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card__icon">📱</div>
+                        <div class="contact-card__content">
+                            <h3>Контакты</h3>
+                            <p>Telegram: @metaworld_vologda<br>VK: vk.com/metaworld_vologda</p>
+                        </div>
+                    </div>
+
+                    <button class="btn btn--primary btn--large open-modal" data-modal="booking" style="margin-top: 2rem;">
+                        Забронировать место
+                    </button>
+                </div>
+
+                <div class="contacts__map">
+                    <div class="map-placeholder">
+                        <div class="map-placeholder__icon">🗺️</div>
+                        <p>Интерактивная карта</p>
+                        <small>Здесь будет Яндекс.Карта с меткой</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <span class="logo__text">Meta</span><span class="logo__text logo__text--accent">World</span>
+                </div>
+                
+                <div class="footer__info">
+                    <p>© 2025 MetaWorld. Киберспортивный клуб в Вологде.</p>
+                    <p>Все права защищены.</p>
+                </div>
+
+                <div class="footer__dev">
+                    <p>Создатель и разработчик сайта:</p>
+                    <a href="https://studio817.ru/banan" target="_blank" class="footer__dev-link">studio817.ru/banan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть">&times;</button>
+            
+            <h2 class="modal__title">Забронировать <span class="text-accent">место</span></h2>
+            <p class="modal__subtitle">Заполни форму — мы перезвоним через 2 минуты</p>
+
+            <form class="form" id="bookingForm">
+                <div class="form__group">
+                    <label class="form__label">Ваше имя</label>
+                    <input type="text" class="form__input" name="name" placeholder="Как к вам обращаться?" required>
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label">Телефон</label>
+                    <input type="tel" class="form__input" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label">Выберите зону</label>
+                    <select class="form__input" name="zone" required>
+                        <option value="">-- Выберите зону --</option>
+                        <option value="pc-standard">PC Standard</option>
+                        <option value="pc-vip">PC VIP</option>
+                        <option value="pc-bootcamp">PC Bootcamp</option>
+                        <option value="ps5">PlayStation 5</option>
+                        <option value="duo">DUO Зал</option>
+                        <option value="trio">TRIO Зал</option>
+                        <option value="solo">SOLO Зал</option>
+                    </select>
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label">Дата и время</label>
+                    <input type="datetime-local" class="form__input" name="datetime" required>
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label">Простая проверка: 2 + 2 = ?</label>
+                    <input type="number" class="form__input" name="captcha" placeholder="Введите ответ" required>
+                    <small class="form__hint">Защита от роботов</small>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--large btn--full">
+                    Отправить заявку
+                </button>
+
+                <p class="form__privacy">
+                    Нажимая кнопку, вы соглашаетесь с обработкой персональных данных
+                </p>
+            </form>
+
+            <div class="form__success" id="formSuccess" style="display: none;">
+                <div class="success-icon">✓</div>
+                <h3>Заявка отправлена!</h3>
+                <p>Мы перезвоним вам в течение 2 минут для подтверждения бронирования.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
