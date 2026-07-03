@@ -1,0 +1,36 @@
+assets/images/gallery/logo-neon.jpg
+Неоновый логотип "M" (фиолетовый)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/ps5-zone.jpg
+PS5 зона (крупный план)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/duo-hall.jpg
+DUO зал (другой ракурс)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/trio-hall.jpg
+TRIO зал (другой ракурс)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/vip-hall.jpg
+VIP зал (другой ракурс)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/standard-hall.jpg
+Standard зал (другой ракурс)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/tv-hall.jpg
+TV зал (диван, телевизор, приставка)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/hookah.jpg
+Кальянная зона (кальян, столик)
+800×600px
+Скриншот из ВК альбома
+assets/images/gallery/atmosphere.jpg
+Атмосфера (неон, Joker на стене, бар)
+800×600px
+Скриншот из ВК альбома
